@@ -1,0 +1,45 @@
+#bloque1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    opacity: 1;
+}
+
+#bloque2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+#bloque3{
+    width: 100px;
+    height: 100px;
+    display: hidden;
+    display: inline-block;
+}
+
+#bloque4{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    opacity: 0.1;
+}
+
+#texto1{
+    text-align: center;
+}
+#texto2{
+    text-decoration: underline;
+}
+#texto3{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+}
