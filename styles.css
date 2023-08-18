@@ -1,0 +1,50 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal{
+    background-color: rgb(202, 202, 202);
+   width: 400px;
+   height: 100px;
+    border: 1px solid;
+    display: flex;
+}
+
+#uno{
+    margin: 10px;
+    width: 30%;
+    display: inline-block;
+    border-radius: 57%;
+}
+#imagen{
+
+    width: 100%;
+    border-radius: 100%;
+}
+#dos{
+    display: inline-block;
+    width: 100%;
+    margin-left: 5px;
+}
+#tres{
+    display: inline-block;
+    width: 25%;
+    margin-left: 10px;
+    opacity: 0.7;
+}   
+
+#texto{
+   margin-bottom: 0;
+    display: inline-block;
+}
+#bienvenida{
+    margin-top: 3px;
+}
+
+.dia{
+    display: inline-block
+}
+.puntos{
+    width: 20%;
+    opacity: 0.5;
+}
