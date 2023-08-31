@@ -7,13 +7,15 @@ nav{
     background-color: black;
     width: 100%;
     opacity: 0.6;
-    height: fit-content;
+    height: 30px;
     position: fixed;
-    right: 0%;
 }
 
-#icono{
+.iconos{
     color: white;
+    position: absolute;
+    right: 0%;
+
 }
 
 .principal{
@@ -48,16 +50,19 @@ h3{
 }
 
 .shuffle{
-    position: fixed;
-    position: absolute;
-    border-radius: 55%;
+    z-index: 90;
+    border-radius: 50%;
     width:fit-content;
-    padding: 1.5%;
+    padding: 2%;
     right: 0%;
     background-color: rgb(218, 68, 93);
+    bottom:25%;
+    right: 1%;
+    position: fixed;
 }
 
 h3{
     display: inline-block;
     color: white;
 }
+
