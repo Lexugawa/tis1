@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.divCero{
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.quedateEnCasa{
+    padding: 20px;
+    display: flex;
+}
+.iconos{
+    margin-top: 8px;
+    display: flex;
+    position: fixed;
+    right: 17%;
+}
+i{
+    padding-left: 10px;
+}
+.buscador{
+    background-color: white;
+    width: 300px;
+    height: 34px;
+    display: flex;
+    position: fixed;
+    right: 0%;
+    top: 10px;
+}
+#lupa{
+    position: fixed;
+    display: flex;
+    right: 0%;
+    background-color: rgb(37, 37, 37);
+    padding: 5px;
+    color: white;
+}
+
+
+
+
+
+
+.divUno{
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flexbox;
+    height: 300px;
+}
+
+.divDos{
+    width: 100%;
+    background-color: crimson;
+    height: 500px;
+}
+
+.divTres{
+    width: 100%;
+    background-color: darkcyan;
+    height: 300px;
+}
