@@ -78,9 +78,15 @@ i{
 }
 
 .barraNavegacion{
+    display: flex;
+    align-items: center;
 }
 
+.textoNav{
+    padding-left: 4rem;
+    padding-bottom: 1rem;
 
+}
 
 
 
