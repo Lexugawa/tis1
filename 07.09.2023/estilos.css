@@ -1,105 +1,188 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.divCero{
-    background-color: rgb(238, 238, 238);
-    width: 100%;
-    height: fit-content;
+#header{
+    background: rgb(238, 238, 238);
+    height: 3.5em;
     display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
 }
 
-.quedateEnCasa{
-    padding: 20px;
-
-}
-.iconos{
-    display: inline;
+#quedateEnCasa{
+    height: 50%;
     position: absolute;
-    right: 40%;
+    bottom: 10px;
+    font-size: 13px;
+    left: 10%;
 }
+
+#iconos{
+    position: absolute;
+    left: 55%;
+    padding: 10px;
+}
+
 i{
     padding-left: 10px;
 }
+
 .buscador{
-    background-color: white;
-    width: 300px;
-    height: 34px;
-    display: flex;
-    position: fixed;
-    right: 0%;
-    top: 10px;
-}
-#lupa{
+    width: 250px;
+    height: 65%;
     position: absolute;
+    left: 70%;
+    background: white;
     display: flex;
-    align-items: center;
-    right: 0%;
-    background-color: rgb(37, 37, 37);
+    justify-content: flex-end;
+}
+
+#lupa{
+    background: rgb(49, 49, 49);
+    height: 74%;
     padding: 5px;
+    width: 25px;
     color: white;
 }
 
-
-
-
-
-
-.divUno{
-    width: 100%;
-    background-color: white;
+#medio{
+    display: flex;
     align-items: center;
-    display: flex;
-    height: fit-content;
+    height: 9em;
+    justify-content: center;
+    padding: 5px;
 }
 
-.contenedor{
-    padding: 2rem;
-    padding-left: 4rem;
-    display: flex;
-  
+#imagenUCSC{
+    position: absolute;
+    left: 10%;
+    border-right: 2px solid;
+    padding-right: 25px;
+    border-color: rgb(232, 232, 232);
 }
-
 .logo{
     width: 287px;
     height: 87px;
 }
 
-.textoActualidadUCSC{
-    font-size: 2rem;
-    padding-left: 2rem;
-    border-left: 1px solid;
-    border-color: rgb(207, 207, 207);
+#textoMedioConfig{
+    position: absolute;
+    left: 33%;
 }
 
-.colortext{
-    color: rgb(201, 29, 29);
+#textoMedio{
+    color: rgb(193, 52, 52);
+    
 }
 
-.barraNavegacion{
+#nav{
     display: flex;
+    position: relative;
     align-items: center;
+    height: 2em;
+    justify-content: flex-start;
 }
 
-.textoNav{
-    padding-left: 4rem;
-    padding-bottom: 1rem;
-
+#tabNav{
+    position: absolute;
+    left: 10%;
 }
 
 
+.textoNavegacion{
+    padding-left: 30px;
+    font-size: 15px;
+    display: inline-block;
 
+}
 
-
-.divDos{
+#main{
     width: 100%;
-    background-color: crimson;
     height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.divTres{
-    width: 100%;
-    background-color: darkcyan;
-    height: 300px;
+.cuadradoImagen{
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    background: lightcyan;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+#imagen1{
+   width: 350px;
+   height: 180px;
+   background-image: url('foto1.jpg');
+   background-size: cover;
+   position: relative;
+}
+
+
+#imagen2{
+    background-image: url('foto4.jpg');
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 180px;
+}
+
+#imagen3{
+    background-image: url('foto2.jpg');
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 180px;
+}
+
+#imagen4{
+    background-image: url('foto5.jpg');
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 180px;
+}
+
+#imagen5{
+    background-image: url('foto3.jpg');
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 180px;
+}
+
+#imagen6{
+    background-image: url('foto6.jpg');
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 180px;
+}
+.texto{
+    position: absolute;
+    font-size: 20px;
+    padding: 15px;
+    bottom: 0%;
+    color: white;
+    
+}
+
+.subrayado{
+    color: rgb(187, 33, 33);
+    position: absolute;
+    bottom: 0%;
+    padding: 15px 15px 10px 15px;
 }
