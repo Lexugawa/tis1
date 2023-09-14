@@ -107,18 +107,17 @@ i{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background: rgb(238, 238, 238);
 }
 
 .cuadradoImagen{
     width: 350px;
     height: 450px;
     margin: 10px;
-    background: lightcyan;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 
@@ -185,4 +184,85 @@ i{
     position: absolute;
     bottom: 0%;
     padding: 15px 15px 10px 15px;
+}
+
+#footer{
+    height: fit-content;
+    display: flex;
+
+}
+.logo2{
+    width: 150px;
+    height: 80px;
+}
+
+#imagenUCSC2{
+    height: fit-content;
+    padding-left: 13rem;
+}
+
+#navegacion1{
+    display: flex;
+    width: 800px;
+    height: 65px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 100px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.textoNavegacion1{
+    padding-left: 40px;
+    font-size: 13px;
+}
+
+.textoNavegacion2{
+   position: absolute;
+   left: 93%;
+   bottom: 0%;
+   font-size: 13px;
+
+}
+
+#footerParte2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+#parte1{
+    width: 350px;
+    height: 8rem;
+    display:flex;
+    margin: 10px;
+    position: absolute;
+    left: 13%;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+.letrasRojoFinal{
+    display: inline;
+    font-size: 12px;
+    color: rgb(187, 22, 22);
+}
+.letrasFinal{
+    font-size: 12px;
+}
+
+h5{
+    color: rgb(180, 29, 29);
+}
+
+#parte2{
+    display:flex;
+    margin: 10px;
+    padding-left: 7rem;
+    height: 8rem;
+    width: 24rem;
+    flex-direction: column;
+    justify-content: space-around;
 }
