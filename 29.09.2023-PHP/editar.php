@@ -1,8 +1,11 @@
 <?php
-
 include("conexion.php");
-$consulta = "SELECT * FROM marcas";
+$idRecibido = $_GET["idEnviado"];
+$consulta ="SELECT * FROM marcas WHERE id='.$idRecibido.'";
 $respuesta = mysqli_query($conexion, $consulta);
+
+
+while($row = mysqli_fetch){}
 
 ?>
 
@@ -29,9 +32,9 @@ $respuesta = mysqli_query($conexion, $consulta);
                         <label class="input-group-text" for="inputGroupSelect01">Origen</label>
                         <select class="form-select" id="inputGroupSelect01" name="origen">
                             <option selected>Presione para ver el listado...</option>
-                            <option value="japon">Japon</option>
-                            <option value="china">China</option>
-                            <option value="francia">Francia</option>
+                            <option value="japon"<?php echo $origen == "japon"?"selected": null ?>>Japon</option>
+                            <option value="china"<?php echo $origen == "china"?"selected": null ?>>China</option>
+                            <option value="francia"<?php echo $origen == "francia"?"selected": null ?>>Francia</option>
                         </select>
                         </div>
                     <div class="input-group flex-nowrap">
@@ -41,46 +44,8 @@ $respuesta = mysqli_query($conexion, $consulta);
                     <button type="submit" class="btn btn-secondary m-2">Guardar</button>
             </form>
         </div>
-        <div class="col">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Origen</th>
-                        <th scope="col">Imagen</th>
-                        <th scope= "col">Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                        while($row = mysqli_fetch_assoc($respuesta)){
-                        echo "<tr>";
-                        echo "<td>".$row["id"]."</td>";
-                        echo " <td>" .$row["nombre"]."</td>";
-                        echo " <td>" .$row["origen"]."</td>";
-                        echo " <td>" .$row["logo"]."</td>";
-                        echo "<td>";
-                        echo "<a href='eliminar.php?idEnviado=".$row["id"]."'>";
-                        echo "<button class = 'btn btn-sm'>Eliminar</button>";
-                        echo "</a>";
-                        echo "<a href='editar.php?idEnviado=".$row["id"]."'>";
-                        echo "<button class = 'btn btn-sm'>Editar</button>";
-                        echo "</a>";    
-                        echo "</td>";     
-                        echo "</tr>";
-                        }
-                    ?>
-                </tbody>
-            </table>                  
-        </div>
     </div>
 </div>
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
